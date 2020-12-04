@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.TambahLokerActivity">
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:paddingTop="10dp"
+            android:id="@+id/txtnamaloker"
+            android:layout_width="match_parent"
+            android:text="Nama Loker"
+            android:textSize="15dp"
+            android:layout_height="match_parent"/>
+        <EditText android:layout_width="match_parent"
+            android:text="Accounting"
+            android:paddingTop="10dp"
+            android:id="@+id/edtnamaloker"
+            android:layout_below="@+id/txtnamaloker"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:paddingTop="10dp"
+            android:id="@+id/txtlogo"
+            android:layout_width="match_parent"
+            android:text="Logo Perusahaan"
+            android:textSize="15dp"
+            android:layout_below="@+id/edtnamaloker"
+            android:layout_height="match_parent"/>
+
+        <EditText android:layout_width="match_parent"
+            android:text="logo.png"
+            android:paddingTop="10dp"
+            android:id="@+id/edtlogo"
+            android:layout_below="@+id/txtlogo"
+            android:layout_height="wrap_content"/>
+
+<!--        <Spinner android:layout_width="match_parent"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:id="@+id/listnama"-->
+<!--            android:entries="@array/DaftarSiswa"-->
+<!--            android:padding="15dp"-->
+<!--            android:layout_height="wrap_content">-->
+<!--        </Spinner>-->
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_below="@+id/edtlogo"
+            android:id="@+id/nowa"
+            android:layout_width="match_parent"
+            android:text="No WhatsApp"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"/>
+        <EditText android:layout_width="match_parent"
+            android:text="084637399474"
+            android:paddingTop="10dp"
+            android:id="@+id/edtnowa"
+            android:layout_below="@+id/nowa"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_below="@+id/edtnowa"
+            android:id="@+id/tanggal"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:text="Tanggal"
+            android:layout_height="wrap_content"/>
+        <EditText android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:text="23 Oktober 2019"
+            android:id="@+id/edttanggal"
+            android:layout_below="@+id/tanggal"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_below="@+id/edttanggal"
+            android:id="@+id/notelp"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:text="No Telepon"
+            android:layout_height="wrap_content"/>
+        <EditText android:layout_width="match_parent"
+            android:text="09847848474"
+            android:paddingTop="10dp"
+            android:id="@+id/edtnotelp"
+            android:layout_below="@+id/notelp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_below="@+id/edtnotelp"
+            android:id="@+id/deskripsi"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:text="Deskripsi"
+            android:layout_height="wrap_content"/>
+        <EditText android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:text="Dibutuhkan tenaga Accounting penuh waktu dengan persyaratan sebagai berikut :"
+            android:textSize="10dp"
+            android:id="@+id/edtdeskripsi"
+            android:layout_below="@+id/deskripsi"
+            android:layout_height="170dp"/>
+
+
+
+        <Button android:layout_width="match_parent"
+            android:text="Simpan Data Sekarang"
+            android:id="@+id/SimpanTambahLoker"
+            android:background="#F44336"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/edtdeskripsi"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</ScrollView>
